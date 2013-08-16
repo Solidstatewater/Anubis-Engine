@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Source\ResourceManager_pch.h" />
+    <ClInclude Include="Source\Resource.h" />
+    <ClInclude Include="Source\ResourceLoader.h" />
+    <ClInclude Include="Source\ResourceCache.h" />
+    <ClInclude Include="Source\ResourceFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ResourceManager_pch.cpp" />
+    <ClCompile Include="Source\Resource.cpp" />
+    <ClCompile Include="Source\ResourceCache.cpp" />
+    <ClCompile Include="Source\ResourceFile.cpp" />
+  </ItemGroup>
+</Project>

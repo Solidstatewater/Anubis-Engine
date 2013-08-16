@@ -1,0 +1,12 @@
+﻿Build started 8/10/2013 1:36:49 AM.
+     1>Project "D:\Users\Dgek\Desktop\Dgek\Engine\VSMDemo\VSMDemo.vcxproj" on node 3 (Build target(s)).
+     1>FxCompile:
+         D:\Program Files (x86)\Windows Kits\8.0\bin\x86\fxc.exe /nologo /E"main" /T ps_4_0_level_9_3 /Fo "D:\Users\Dgek\Desktop\Dgek\Engine\Debug\VarianceShadows_DepthPS.cso" /Od /Zi Shaders\VarianceShadows_DepthPS.hlsl 
+     1>FXC : error X3501: 'main': entrypoint not found
+         
+         compilation failed; no code produced
+     1>Done Building Project "D:\Users\Dgek\Desktop\Dgek\Engine\VSMDemo\VSMDemo.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.85

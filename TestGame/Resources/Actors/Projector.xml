@@ -1,0 +1,17 @@
+<Actor>
+  <!-- AI data-->
+  <AI></AI>
+  <!-- Physics Data -->
+  <Physics isStatic="false">
+    <Objects>
+      <Box></Box>
+      <Density>aluminum</Density>
+      <PhysicsMaterial>Normal</PhysicsMaterial>
+    </Objects>
+  </Physics>
+  <!-- Rendering data -->
+  <Render>
+    <Box></Box>
+    <SpotLight dir_x="0" dir_y="0" dir_z="1" red="255" green="255" blue="255"></SpotLight>
+  </Render>
+</Actor>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{617f3995-cbb6-4528-b0e6-7ffe5cd34d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{e7f96371-dc48-4b3d-b94a-937d507d3f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\States">
+      <UniqueIdentifier>{7d43e95b-7c47-491b-af5d-59623df1c133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities">
+      <UniqueIdentifier>{ea500d67-9945-429e-9017-0edec4a3e8c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\ObstacleEntity">
+      <UniqueIdentifier>{75e4662d-d6ba-4b1f-9e94-513aac632207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\BoxEntity">
+      <UniqueIdentifier>{ab555ae2-9639-4d66-89df-60aff5436cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\PlaneEntity">
+      <UniqueIdentifier>{aa93b56a-2847-4e0a-8106-86061e2ae2c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\SpotLightEntity">
+      <UniqueIdentifier>{702a84a6-debc-451c-9845-240031f65f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{7052f09f-53f9-4462-bfa2-a87684762201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Meshes">
+      <UniqueIdentifier>{f9359dc9-2704-45ef-8c22-0336e48c98ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\winmain.cpp" />
+    <ClCompile Include="Source\VSMDemo_pch.cpp" />
+    <ClCompile Include="Source\Game\VSMDemo.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\BoxEntity\BoxEntityResource.cpp">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\BoxEntity\BoxEntity.cpp">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\BoxEntity\BoxEntityRepresentation.cpp">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\ObstacleEntity\ObstacleEntityResource.cpp">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\ObstacleEntity\ObstacleEntity.cpp">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\ObstacleEntity\ObstacleEntityRepresentation.cpp">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\PlaneEntity\PlaneEntity.cpp">
+      <Filter>Game\Entities\PlaneEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\SpotLightEntity\SpotLightEntityRepresentation.cpp">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\SpotLightEntity\SpotLightEntityResource.cpp">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Entities\SpotLightEntity\SpotLightEntity.cpp">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\VSMStateFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Meshes\PlaneMesh.cpp">
+      <Filter>Renderer\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Meshes\BoxMesh.cpp">
+      <Filter>Renderer\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\States\ShadowTestState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Game\States\ShadowTestState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VSMDemo_pch.h" />
+    <ClInclude Include="Source\Game\VSMDemo.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\BoxEntity\BoxEntityRepresentation.h">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\BoxEntity\BoxEntityResource.h">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\BoxEntity\BoxEntity.h">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\ObstacleEntity\ObstacleEntityRepresentation.h">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\ObstacleEntity\ObstacleEntityResource.h">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\ObstacleEntity\ObstacleEntity.h">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\PlaneEntity\PlaneEntity.h">
+      <Filter>Game\Entities\PlaneEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\SpotLightEntity\SpotLightEntityRepresentation.h">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\SpotLightEntity\SpotLightEntityResource.h">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Entities\SpotLightEntity\SpotLightEntity.h">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\VSMStateFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Meshes\BoxMesh.h">
+      <Filter>Renderer\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Meshes\PlaneMesh.h">
+      <Filter>Renderer\Meshes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

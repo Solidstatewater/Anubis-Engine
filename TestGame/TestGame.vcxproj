@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16F596CE-F45F-471A-8F1C-96118B5A099C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestGame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Test\$(ProjectName)\</OutDir>
+    <IntDir>..\..\Intermediate\Obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Demos\$(ProjectName)\</OutDir>
+    <IntDir>..\..\Intermediate\Obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HK_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\ThirdParty\havok\Lib\win32_vs2010\debug_multithreaded;..\..\ThirdParty\havok\Source;..\..\ThirdParty\include\;$(SolutionDir)Memory\Source;$(SolutionDir)Definitions\Source;$(SolutionDir)Messenger\Source;$(SolutionDir)Graphics\Source;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(SolutionDir)Scene\Source\;$(SolutionDir)AI\Source\;$(SolutionDir)Physics\Source\;$(SolutionDir)Renderer\Source\;$(SolutionDir)Audio\Source\;$(SolutionDir)Game\Source\;$(SolutionDir)Engine\Source\;$(SolutionDir)FileStream\Source;$(SolutionDir)Input\Source;%(AdditionalIncludeDirectories);$(SolutionDir)Audio\Source;$(SolutionDir)ResourceManager\Source;..\..\ThirdParty\Assimp\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>TestGame_pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>TestGame_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;Audio.lib;Definitions.lib;Engine.lib;Game.lib;Math.lib;Messenger.lib;Renderer.lib;Physics.lib;ResourceManager.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkcdInternal.lib;hkcdCollide.lib;hkpCollide.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkpVehicle.lib;Scene.lib;Graphics.lib;FileStream.lib;d3d11.lib;d3dx11d.lib;d3dcompiler.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ThirdParty\Assimp\lib\assimp_debug-dll_win32;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)Lib\$(Configuration);..\..\ThirdParty\havok\Lib\win32_vs2010\fulldebug_multithreaded</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ResourceManager\Source;..\..\ThirdParty\havok\Lib\win32_vs2010\release_multithreaded;..\..\ThirdParty\havok\Source;..\..\ThirdParty\include\;$(SolutionDir)Memory\Source;$(SolutionDir)Definitions\Source;$(SolutionDir)Messenger\Source;$(SolutionDir)Graphics\Source;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(SolutionDir)Scene\Source\;$(SolutionDir)AI\Source\;$(SolutionDir)Physics\Source\;$(SolutionDir)Renderer\Source\;$(SolutionDir)Audio\Source\;$(SolutionDir)Game\Source\;$(SolutionDir)Engine\Source\;$(SolutionDir)FileStream\Source;$(SolutionDir)Input\Source;%(AdditionalIncludeDirectories);$(SolutionDir)Audio\Source;..\..\ThirdParty\Assimp\source;..\..\ThirdParty\Assimp\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>TestGame_pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>TestGame_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;Audio.lib;Definitions.lib;Engine.lib;Game.lib;Math.lib;Messenger.lib;Renderer.lib;Physics.lib;ResourceManager.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkcdInternal.lib;hkcdCollide.lib;hkpCollide.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkpVehicle.lib;Scene.lib;Graphics.lib;FileStream.lib;d3d11.lib;d3dx11d.lib;d3dcompiler.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ThirdParty\Assimp\lib\assimp_release-dll_win32;..\..\ThirdParty\havok\Lib\win32_vs2010\release_multithreaded;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)Lib\$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Entities\BoxEntity\BoxEntity.cpp" />
+    <ClCompile Include="Source\Entities\BoxEntity\BoxEntityRepresentation.cpp" />
+    <ClCompile Include="Source\Entities\BoxEntity\BoxEntityResource.cpp" />
+    <ClCompile Include="Source\Entities\ObstacleEntity\ObstacleEntity.cpp" />
+    <ClCompile Include="Source\Entities\ObstacleEntity\ObstacleEntityRepresentation.cpp" />
+    <ClCompile Include="Source\Entities\ObstacleEntity\ObstacleEntityResource.cpp" />
+    <ClCompile Include="Source\Entities\PlaneEntity\PlaneEntity.cpp" />
+    <ClCompile Include="Source\Entities\PointLightEntity\PointLightEntity.cpp" />
+    <ClCompile Include="Source\Entities\PointLightEntity\PointLightEntityRepresentation.cpp" />
+    <ClCompile Include="Source\Entities\PointLightEntity\PointLightEntityResource.cpp" />
+    <ClCompile Include="Source\Entities\SpotLightEntity\SpotLightEntity.cpp" />
+    <ClCompile Include="Source\Entities\SpotLightEntity\SpotLightEntityRepresentation.cpp" />
+    <ClCompile Include="Source\Entities\SpotLightEntity\SpotLightEntityResource.cpp" />
+    <ClCompile Include="Source\Entities\TestEntity.cpp" />
+    <ClCompile Include="Source\Game\DemoStateFactory.cpp" />
+    <ClCompile Include="Source\Game\States\GameTestState.cpp" />
+    <ClCompile Include="Source\Game\TestGame.cpp" />
+    <ClCompile Include="Source\Objects\Vegetation\GrassRepresentation.cpp" />
+    <ClCompile Include="Source\Renderer\Meshes\BoxMesh.cpp" />
+    <ClCompile Include="Source\Renderer\Meshes\PlaneMesh.cpp" />
+    <ClCompile Include="Source\TestGame_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Entities\BoxEntity\BoxEntity.h" />
+    <ClInclude Include="Source\Entities\BoxEntity\BoxEntityRepresentation.h" />
+    <ClInclude Include="Source\Entities\BoxEntity\BoxEntityResource.h" />
+    <ClInclude Include="Source\Entities\ObstacleEntity\ObstacleEntity.h" />
+    <ClInclude Include="Source\Entities\ObstacleEntity\ObstacleEntityRepresentation.h" />
+    <ClInclude Include="Source\Entities\ObstacleEntity\ObstacleEntityResource.h" />
+    <ClInclude Include="Source\Entities\PlaneEntity\PlaneEntity.h" />
+    <ClInclude Include="Source\Entities\PointLightEntity\PointLightEntity.h" />
+    <ClInclude Include="Source\Entities\PointLightEntity\PointLightEntityRepresentation.h" />
+    <ClInclude Include="Source\Entities\PointLightEntity\PointLightEntityResource.h" />
+    <ClInclude Include="Source\Entities\SpotLightEntity\SpotLightEntity.h" />
+    <ClInclude Include="Source\Entities\SpotLightEntity\SpotLightEntityRepresentation.h" />
+    <ClInclude Include="Source\Entities\SpotLightEntity\SpotLightEntityResource.h" />
+    <ClInclude Include="Source\Entities\TestEntity.h" />
+    <ClInclude Include="Source\Game\DemoStateFactory.h" />
+    <ClInclude Include="Source\Game\States\GameTestState.h" />
+    <ClInclude Include="Source\Game\TestGame.h" />
+    <ClInclude Include="Source\Objects\Vegetation\GrassRepresentation.h" />
+    <ClInclude Include="Source\Renderer\Meshes\BoxMesh.h" />
+    <ClInclude Include="Source\Renderer\Meshes\PlaneMesh.h" />
+    <ClInclude Include="Source\TestGame_pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="LightPass_Pixel.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="LightPass_Vertex.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="SSAO_All.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SSAO_VS</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SSAO_VS</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="SSAO_Pixel.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SSAO_PS</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">3.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SSAO_PS</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="SSAO_Vertex.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SSAO_VS</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SSAO_VS</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Grass_Pixel.hlsl" />
+    <None Include="Grass_Vertex.hlsl" />
+    <None Include="NoiseGeneration.hlsl" />
+    <None Include="Pixel_SSAO.hlsl" />
+    <None Include="Resources\Shaders\Other\CopyResource.hlsl" />
+    <None Include="Resources\Shaders\Other\FromSRVtoRTV_PS.hlsl" />
+    <None Include="Resources\Shaders\Other\FromSRVtoRTV_VS.hlsl" />
+    <None Include="Resources\Shaders\PostProcessing\MotionBlur_PS.hlsl" />
+    <None Include="Resources\Shaders\PostProcessing\MotionBlur_VS.hlsl" />
+    <None Include="Resources\Shaders\PostProcessing\VelocityMap_PS.hlsl" />
+    <None Include="Resources\Shaders\PostProcessing\VelocityMap_VS.hlsl" />
+    <None Include="Resources\Shaders\Shadows\ShadowMap_PS.hlsl" />
+    <None Include="Resources\Shaders\Shadows\ShadowMap_VS.hlsl" />
+    <None Include="Resources\Shaders\Shadows\VarianceShadows_DepthPS.hlsl" />
+    <None Include="Resources\Shaders\Shadows\VarianceShadows_DepthVS.hlsl" />
+    <None Include="Source\Shaders\Pixel_SSAO.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

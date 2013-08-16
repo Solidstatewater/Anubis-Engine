@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Graphics_pch.cpp" />
+    <ClCompile Include="Source\Final\Resources\Textures\Texture2D.cpp">
+      <Filter>Final\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Textures\TexturesDX11.cpp">
+      <Filter>DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\Resources\Textures\Texture3D.cpp">
+      <Filter>Final\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\Resources\Buffers\BufferParams.cpp">
+      <Filter>Final\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Buffers\BuffersDX11.cpp">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Views\ShaderResourceViewDX11.cpp">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Views\UnorderedAccessViewDX11.cpp">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Views\DepthStencilViewDX11.cpp">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Views\RenderTargetViewDX11.cpp">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Buffers\VertexBufferDX11.cpp">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Buffers\IndexBufferDX11.cpp">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Resources\Buffers\ConstantBufferDX11.cpp">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Other\BlobDX11.cpp">
+      <Filter>DX11\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Shaders\HullShaderDX11.cpp">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Shaders\PixelShaderDX11.cpp">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Shaders\VertexShaderDX11.cpp">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Shaders\ComputeShaderDX11.cpp">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Shaders\DomainShaderDX11.cpp">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Shaders\GeometryShaderDX11.cpp">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Fixed\RasterizerDX11.cpp">
+      <Filter>DX11\Stages\Fixed</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\Stages\Fixed\InputAssemblerDX11.cpp">
+      <Filter>DX11\Stages\Fixed</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\States\BlendState.cpp">
+      <Filter>Final\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\States\BlendStateDX11.cpp">
+      <Filter>DX11\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\States\SamplerStateDX11.cpp">
+      <Filter>DX11\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\General.cpp">
+      <Filter>Final</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\Other\Viewport.cpp">
+      <Filter>Final\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Algorithms.cpp" />
+    <ClCompile Include="Source\Final\Resources\ResourceData.cpp">
+      <Filter>Final\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\States\SamplerState.cpp">
+      <Filter>Final\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\States\DepthStencilStateDX11.cpp">
+      <Filter>DX11\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\States\DepthStencilState.cpp">
+      <Filter>Final\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DX11\States\RasterizerStateDX11.cpp">
+      <Filter>DX11\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Final\States\RasterizerState.cpp">
+      <Filter>Final\States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Graphics_pch.h" />
+    <ClInclude Include="Source\Final\Resources\Textures\Texture2D.h">
+      <Filter>Final\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Textures\TexturesDX11.h">
+      <Filter>DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Buffers\BuffersDX11.h">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\ResourceDX11.h">
+      <Filter>DX11\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\ResourceDataDX11.h">
+      <Filter>DX11\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Resources\Textures\Texture3D.h">
+      <Filter>Final\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Views\RenderTargetViewDX11.h">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Views\ShaderResourceViewDX11.h">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Views\UnorderedAccessViewDX11.h">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Views\DepthStencilViewDX11.h">
+      <Filter>DX11\Resources\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Buffers\VertexBufferDX11.h">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Buffers\IndexBufferDX11.h">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Resources\Buffers\ConstantBufferDX11.h">
+      <Filter>DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Other\BlobDX11.h">
+      <Filter>DX11\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Resources\Buffers\Buffers.h">
+      <Filter>Final\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Resources\Stages\Fixed\Fixed.h">
+      <Filter>Final\Stages\Fixed</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Fixed\InputAssemblerDX11.h">
+      <Filter>DX11\Stages\Fixed</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Fixed\RasterizerDX11.h">
+      <Filter>DX11\Stages\Fixed</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Stages\Shaders\Shaders.h">
+      <Filter>Final\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\States\BlendState.h">
+      <Filter>Final\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\General.h">
+      <Filter>Final</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Shaders\ComputeShaderDX11.h">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Shaders\DomainShaderDX11.h">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Shaders\GeometryShaderDX11.h">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Shaders\HullShaderDX11.h">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Shaders\PixelShaderDX11.h">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\Stages\Shaders\VertexShaderDX11.h">
+      <Filter>DX11\Stages\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\States\BlendStateDX11.h">
+      <Filter>DX11\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\States\DepthStencilStateDX11.h">
+      <Filter>DX11\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\States\SamplerStateDX11.h">
+      <Filter>DX11\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Resources\Views\Views.h">
+      <Filter>Final\Resources\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Other\Viewport.h">
+      <Filter>Final\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\Resources\Buffers\BufferParams.h">
+      <Filter>Final\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Algorithms.h" />
+    <ClInclude Include="Source\Final\Resources\ResourceData.h">
+      <Filter>Final\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\States\SamplerState.h">
+      <Filter>Final\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\States\DepthStencilState.h">
+      <Filter>Final\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DX11\States\RasterizerStateDX11.h">
+      <Filter>DX11\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Final\States\RasterizerState.h">
+      <Filter>Final\States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DX11">
+      <UniqueIdentifier>{ed56cd63-d570-4fe2-b02c-4146dcccc791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPENGL">
+      <UniqueIdentifier>{252efd9a-1bd9-45fb-a4ee-70b80e54008e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPENGL_ES">
+      <UniqueIdentifier>{6b43ac18-7d1f-408a-8bb3-8ef9540ae069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final">
+      <UniqueIdentifier>{c5ff3e19-3e0b-491c-bb75-ca7726cf323a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\States">
+      <UniqueIdentifier>{42981a89-b2b0-4504-8088-b7c664ae819a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Stages">
+      <UniqueIdentifier>{3cbb67af-db56-4497-8496-325536fdbac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Other">
+      <UniqueIdentifier>{51c6b44a-3dd2-42ce-ab67-130e2543efe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Resources">
+      <UniqueIdentifier>{42f9e979-ea6f-4233-8476-df10df601777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Resources\Views">
+      <UniqueIdentifier>{6ec111d9-ffeb-4a8a-b9f0-27a4f25f1eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Resources\Textures">
+      <UniqueIdentifier>{09297b7e-38c5-482f-9718-c9f533daad2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Resources\Buffers">
+      <UniqueIdentifier>{25699414-5789-41a1-8e21-b777e0a037f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Stages\Fixed">
+      <UniqueIdentifier>{6ab34a08-c2e9-4db0-8ba2-6f0dd8b580ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX11\Stages\Shaders">
+      <UniqueIdentifier>{3f95b054-8be4-42d3-99c8-86c9bfd737e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\States">
+      <UniqueIdentifier>{d8603f60-918c-4dc4-9303-d5aa40ee1fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Stages">
+      <UniqueIdentifier>{a65956ac-fee3-4b9f-bbc5-7c8649cb9ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Resources">
+      <UniqueIdentifier>{0fb4e1d6-93d4-4724-9573-ee81bd1a0121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Other">
+      <UniqueIdentifier>{eb66e1a8-307b-4af1-956b-c9a2dcc8629f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Stages\Fixed">
+      <UniqueIdentifier>{eca9938e-ffe2-43f7-b4bc-f2f13be2c370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Stages\Shaders">
+      <UniqueIdentifier>{578c2ad3-9044-4168-901b-0a7585ab5e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Resources\Views">
+      <UniqueIdentifier>{bfde1dd5-e388-4101-9c42-7089cd387d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Resources\Textures">
+      <UniqueIdentifier>{46830975-66fd-4e94-8d6a-8714b05693e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Final\Resources\Buffers">
+      <UniqueIdentifier>{634818a0-7833-4372-887c-96d61f8d1315}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

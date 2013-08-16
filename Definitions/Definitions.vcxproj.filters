@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Source\Defines.h" />
+    <ClInclude Include="Source\Error_Handling\Assert.h">
+      <Filter>Error_Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Conventions.h" />
+    <ClInclude Include="Source\Conversions.h" />
+    <ClInclude Include="Source\Types.h" />
+    <ClInclude Include="Source\Strings\HashedString.h">
+      <Filter>Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Anubis.h" />
+    <ClInclude Include="Source\Strings\Operations.h">
+      <Filter>Strings</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Error_Handling">
+      <UniqueIdentifier>{503cd793-8e77-4c3a-833b-87e263673db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings">
+      <UniqueIdentifier>{9165765e-cf9e-4060-8850-b82cf7937448}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Strings\HashedString.cpp">
+      <Filter>Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Anubis.cpp" />
+    <ClCompile Include="Source\Strings\Operations.cpp">
+      <Filter>Strings</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

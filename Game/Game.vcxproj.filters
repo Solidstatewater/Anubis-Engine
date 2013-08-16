@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{f780b908-6946-40dc-b1bb-924d251a5706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLogic">
+      <UniqueIdentifier>{8985c0a9-c6d4-4186-bdda-4468a1c035ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameStateMachine">
+      <UniqueIdentifier>{bf898862-9cf9-4b36-b819-2911439da989}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GameStateMachine\StateFactory.cpp">
+      <Filter>GameStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameStateMachine\StateMachine.cpp">
+      <Filter>GameStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameLogic\Views.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameLogic\Game.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\EntityManager.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game_pch.cpp" />
+    <ClCompile Include="Source\Entities\EntityResource.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GameStateMachine\StateFactory.h">
+      <Filter>GameStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameStateMachine\StateMachine.h">
+      <Filter>GameStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameStateMachine\State.h">
+      <Filter>GameStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameLogic\Game.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameLogic\Views.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\EntityManager.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\EntityResource.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\Entity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game_pch.h" />
+    <ClInclude Include="Source\GameMessages.h" />
+  </ItemGroup>
+</Project>

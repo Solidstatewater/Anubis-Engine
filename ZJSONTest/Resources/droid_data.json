@@ -1,0 +1,10 @@
+{
+    "name": "Droid Destroyer",
+    "strength": 15,
+    "speed": 4.5,
+    "active": true,
+    "weapons": [
+        "laser",
+        "machinegun"
+    ]
+}

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\winmain.cpp" />
+    <ClCompile Include="Source\TestGame_pch.cpp" />
+    <ClCompile Include="Source\Game\TestGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\DemoStateFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\States\GameTestState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\TestEntity.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\BoxEntity\BoxEntityRepresentation.cpp">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\BoxEntity\BoxEntityResource.cpp">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\BoxEntity\BoxEntity.cpp">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Meshes\BoxMesh.cpp">
+      <Filter>Renderer\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\PointLightEntity\PointLightEntity.cpp">
+      <Filter>Game\Entities\PointLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\PointLightEntity\PointLightEntityRepresentation.cpp">
+      <Filter>Game\Entities\PointLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\PointLightEntity\PointLightEntityResource.cpp">
+      <Filter>Game\Entities\PointLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Meshes\PlaneMesh.cpp">
+      <Filter>Renderer\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\PlaneEntity\PlaneEntity.cpp">
+      <Filter>Game\Entities\PlaneEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Vegetation\GrassRepresentation.cpp">
+      <Filter>Game\Objects\Vegetation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\SpotLightEntity\SpotLightEntity.cpp">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\SpotLightEntity\SpotLightEntityRepresentation.cpp">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\SpotLightEntity\SpotLightEntityResource.cpp">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\ObstacleEntity\ObstacleEntityRepresentation.cpp">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\ObstacleEntity\ObstacleEntityResource.cpp">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\ObstacleEntity\ObstacleEntity.cpp">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\TestGame_pch.h" />
+    <ClInclude Include="Source\Game\TestGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\DemoStateFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\TestEntity.h">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\BoxEntity\BoxEntityRepresentation.h">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\BoxEntity\BoxEntityResource.h">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\BoxEntity\BoxEntity.h">
+      <Filter>Game\Entities\BoxEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Meshes\BoxMesh.h">
+      <Filter>Renderer\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\PointLightEntity\PointLightEntity.h">
+      <Filter>Game\Entities\PointLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\PointLightEntity\PointLightEntityRepresentation.h">
+      <Filter>Game\Entities\PointLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\PointLightEntity\PointLightEntityResource.h">
+      <Filter>Game\Entities\PointLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\States\GameTestState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Meshes\PlaneMesh.h">
+      <Filter>Renderer\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\PlaneEntity\PlaneEntity.h">
+      <Filter>Game\Entities\PlaneEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\Vegetation\GrassRepresentation.h">
+      <Filter>Game\Objects\Vegetation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\SpotLightEntity\SpotLightEntity.h">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\SpotLightEntity\SpotLightEntityRepresentation.h">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\SpotLightEntity\SpotLightEntityResource.h">
+      <Filter>Game\Entities\SpotLightEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\ObstacleEntity\ObstacleEntity.h">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\ObstacleEntity\ObstacleEntityRepresentation.h">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\ObstacleEntity\ObstacleEntityResource.h">
+      <Filter>Game\Entities\ObstacleEntity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{2a442b50-62c3-4fc0-b3c9-227ac575c104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\States">
+      <UniqueIdentifier>{79172e02-015d-40ed-a208-85e920eaccbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities">
+      <UniqueIdentifier>{8d4ef6c5-83af-4671-aa99-3c3f312f5677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\BoxEntity">
+      <UniqueIdentifier>{dbe3091c-f305-475e-887b-aef4353d31d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{0bb00441-7a9a-4fbe-9fad-9f189d4b00a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Meshes">
+      <UniqueIdentifier>{75ce1f7e-f635-4413-b769-e9fb2e9c6b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\PointLightEntity">
+      <UniqueIdentifier>{c2d25620-d9ab-4960-9e7e-22388dfdd7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\PlaneEntity">
+      <UniqueIdentifier>{9738bf53-5aa5-45f3-ade4-a8bbf8a4a9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{bb8810ce-8f21-4dfc-aa34-4a8500db9618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects">
+      <UniqueIdentifier>{09f6f764-92c9-405e-9dcc-dded82409aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Vegetation">
+      <UniqueIdentifier>{d95648ee-bbeb-44bc-8c7e-83887640f090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Shadows">
+      <UniqueIdentifier>{40fac2c1-b298-445c-bac8-b7ab1fb14ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Other">
+      <UniqueIdentifier>{59d7028c-69c0-4300-80a5-5bf691e8b342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Filters">
+      <UniqueIdentifier>{4af5784d-e39b-43fb-8f40-bd1599b5a424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\SpotLightEntity">
+      <UniqueIdentifier>{14fea3b1-fdc7-4c6c-a8bf-77ceb730c26b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\PostProcessing">
+      <UniqueIdentifier>{f9d8639a-9cfe-4590-8e15-c55df62f1479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\ObstacleEntity">
+      <UniqueIdentifier>{36bc75af-4f11-4704-aa9e-4c8ec51815e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SSAO_Vertex.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SSAO_Pixel.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SSAO_All.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="LightPass_Vertex.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="LightPass_Pixel.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Shaders\Pixel_SSAO.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Grass_Pixel.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Grass_Vertex.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="NoiseGeneration.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Pixel_SSAO.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\Shadows\ShadowMap_VS.hlsl">
+      <Filter>Shaders\Shadows</Filter>
+    </None>
+    <None Include="Resources\Shaders\Shadows\ShadowMap_PS.hlsl">
+      <Filter>Shaders\Shadows</Filter>
+    </None>
+    <None Include="Resources\Shaders\Shadows\VarianceShadows_DepthPS.hlsl">
+      <Filter>Shaders\Shadows</Filter>
+    </None>
+    <None Include="Resources\Shaders\Shadows\VarianceShadows_DepthVS.hlsl">
+      <Filter>Shaders\Shadows</Filter>
+    </None>
+    <None Include="Resources\Shaders\Other\CopyResource.hlsl">
+      <Filter>Shaders\Other</Filter>
+    </None>
+    <None Include="Resources\Shaders\PostProcessing\VelocityMap_VS.hlsl">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Resources\Shaders\PostProcessing\MotionBlur_PS.hlsl">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Resources\Shaders\PostProcessing\MotionBlur_VS.hlsl">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Resources\Shaders\PostProcessing\VelocityMap_PS.hlsl">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Resources\Shaders\Other\FromSRVtoRTV_VS.hlsl">
+      <Filter>Shaders\Other</Filter>
+    </None>
+    <None Include="Resources\Shaders\Other\FromSRVtoRTV_PS.hlsl">
+      <Filter>Shaders\Other</Filter>
+    </None>
+  </ItemGroup>
+</Project>

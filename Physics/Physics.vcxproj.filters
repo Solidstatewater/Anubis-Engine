@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Source\Physics_pch.h" />
+    <ClInclude Include="Source\PhysicsInterface.h" />
+    <ClInclude Include="Source\Havok\Havok.h">
+      <Filter>Havok</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\NullPhysics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Physics_pch.cpp" />
+    <ClCompile Include="Source\Havok\Havok.cpp">
+      <Filter>Havok</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Havok">
+      <UniqueIdentifier>{ed7f39c5-4635-4f05-a797-94c4e564eafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Properties">
+      <UniqueIdentifier>{deddfcc8-4a83-488f-b1ee-85ced56d6d48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Properties\DensityTable.xml">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Source\Properties\Materials.xml">
+      <Filter>Properties</Filter>
+    </None>
+  </ItemGroup>
+</Project>

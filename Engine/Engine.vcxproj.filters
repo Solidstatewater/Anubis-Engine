@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{029d837e-94a9-4888-9fbb-3970c76b1c5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{415dc72c-17d8-485e-99cf-b8057ee56a5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Time\Timer.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine_pch.h" />
+    <ClInclude Include="Source\Application\Engine.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Time\Timer.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine_pch.cpp" />
+    <ClCompile Include="Source\Application\Engine.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

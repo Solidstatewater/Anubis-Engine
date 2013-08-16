@@ -1,0 +1,85 @@
+#pragma once
+//====================================================================================
+//JSONLoader.h : Declare JSON-file reader
+//
+//This code is part of Anubis Engine.
+//
+//Anubis Engine is a free game engine created as a fan project to be
+//awesome platform for developing games!
+//
+//All sources can be found here:
+//	https://github.com/Dgek/Engine
+//
+//Demos based on Anubis Engine can be found here:
+//	https://github.com/Dgek/Demos
+//
+//Copyright (c) 2013, Muralev Evgeny
+//All rights reserved.
+//
+//Redistribution and use in source and binary forms, with
+//or without modification, are permitted provided that the
+//following conditions are met:
+//
+//Redistributions of source code must retain the above copyright notice,
+//this list of conditions and the following disclaimer.
+//
+//Redistributions in binary form must reproduce the above copyright notice,
+//this list of conditions and the following disclaimer in the documentation
+//and/or other materials provided with the distribution.
+//
+//Neither the name of the Minotower Games nor the names of its contributors 
+//may be used to endorse or promote products derived from this software 
+//without specific prior written permission.
+//
+//THIS SOFTWARE IS PROVIDED BY MURALEV EVGENY "AS IS"
+//AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+//THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+//ARE DISCLAIMED. IN NO EVENT SHALL MURALEV EVGENY BE LIABLE
+//FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+//(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+//LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+//ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+//(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+//SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+//====================================================================================
+
+#include "Types.h"
+#include "rapidjson\document.h"
+
+namespace Anubis
+{
+	class JSONLoader
+	{
+	public:
+		//Parse document or string with JSON format
+		static ABOOL Parse(const ACHAR * const pJSON);
+		static ABOOL Parse(const ASTRING & filename);
+
+		//Get field values from JSON
+		static ABOOL	GetBool		(const ACHAR * const field);
+		static ASTRING	GetString	(const ACHAR * const field);
+		static AUINT32	GetAUINT32	(const ACHAR * const field);
+		static AUINT64	GetAUINT64	(const ACHAR * const field);
+		static AINT32	GetAINT32	(const ACHAR * const field);
+		static AINT64	GetAINT64	(const ACHAR * const field);
+		static AREAL32	GetAREAL32	(const ACHAR * const field);
+		static AREAL64	GetAREAL64	(const ACHAR * const field); 
+
+		/***	Array parsing	***/
+		static AVOID	ParseArray	(const ACHAR * const field);
+
+		//Access info about array
+		static AUINT32	ArraySize();
+
+		//Access array data
+		static ABOOL	GetBoolFromArray	(const AINT32 index);
+		static ASTRING	GetStringFromArray	(const AINT32 index);
+		static AUINT32	GetAUINT32FromArray	(const AINT32 index);
+		static AUINT64	GetAUINT64FromArray	(const AINT32 index);
+		static AINT32	GetAINT32FromArray	(const AINT32 index);
+		static AINT64	GetAINT64FromArray	(const AINT32 index);
+		static AREAL32	GetAREAL32FromArray	(const AINT32 index);
+		static AREAL64	GetAREAL64FromArray	(const AINT32 index); 
+	};
+}; //Anubis

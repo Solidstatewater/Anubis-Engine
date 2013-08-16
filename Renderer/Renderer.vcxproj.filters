@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Other">
+      <UniqueIdentifier>{fcabb313-be2e-4b72-ae89-09467d9ba1d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{75568be2-d36c-4aa3-8b81-d33f485d47f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Deferred">
+      <UniqueIdentifier>{6aafd594-2ce9-44b8-8155-fc768a9d6f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights">
+      <UniqueIdentifier>{53a728db-8441-4a89-b9d5-f4fe0fa4195e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cameras">
+      <UniqueIdentifier>{f0cbc8e9-66c7-4465-bb7e-6e660138a897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Meshes">
+      <UniqueIdentifier>{b3f97e08-31ea-4ce3-8f11-cd997ab340d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grass">
+      <UniqueIdentifier>{9777ae0f-d445-4136-b4c4-194a8228ebbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{cdd733a6-e503-462d-b304-ca20fe6e741a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Renderer.h" />
+    <ClInclude Include="Source\Other\Material.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer_pch.h" />
+    <ClInclude Include="Source\RenderQueue.h" />
+    <ClInclude Include="Source\Deferred\GBuffer.h">
+      <Filter>Deferred</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Deferred\DeferredRenderer.h">
+      <Filter>Deferred</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lights\Light.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lights\SpotLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lights\DirectionalLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lights\PointLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Cameras\Camera.h">
+      <Filter>Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Meshes\Meshes.h">
+      <Filter>Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Other\ShaderBunch.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grass\GrassPack.h">
+      <Filter>Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\MeshResource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ShaderResource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Renderer.cpp" />
+    <ClCompile Include="Source\Deferred\GBuffer.cpp">
+      <Filter>Deferred</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer_pch.cpp" />
+    <ClCompile Include="Source\Deferred\DeferredRenderer.cpp">
+      <Filter>Deferred</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderQueue.cpp" />
+    <ClCompile Include="Source\Cameras\Camera.cpp">
+      <Filter>Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Other\Material.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Meshes\Meshes.cpp">
+      <Filter>Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Other\ShaderBunch.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lights\PointLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lights\DirectionalLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lights\SpotLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lights\Light.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grass\GrassPack.cpp">
+      <Filter>Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\MeshResource.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Source\Shaders\GBufferShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Source\Shaders\LightPass.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

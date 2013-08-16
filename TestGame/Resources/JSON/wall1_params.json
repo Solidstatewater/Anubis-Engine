@@ -1,0 +1,8 @@
+{
+	"name" : "PlaneEntity",
+	"position_x" : 0.0,
+	"position_y" : -100.0,
+	"position_z" : 6.0,
+	"width" : 80.0,
+	"height" : 80.0
+}

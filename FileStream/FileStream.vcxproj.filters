@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{5024a48a-e2a5-4229-830c-55563764576a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\XML">
+      <UniqueIdentifier>{1f1d9a02-900f-4dfc-8b89-aef59cc84f1e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\FileStream_pch.h" />
+    <ClInclude Include="Source\Data\JSONLoader.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\XML\tinystr.h">
+      <Filter>Data\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Data\XML\tinyxml.h">
+      <Filter>Data\XML</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\FileStream_pch.cpp" />
+    <ClCompile Include="Source\Data\JSONLoader.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\XML\tinyxml.cpp">
+      <Filter>Data\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\XML\tinyxmlerror.cpp">
+      <Filter>Data\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\XML\tinyxmlparser.cpp">
+      <Filter>Data\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Data\XML\tinystr.cpp">
+      <Filter>Data\XML</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

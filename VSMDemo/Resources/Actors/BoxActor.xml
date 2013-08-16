@@ -1,0 +1,14 @@
+<Actor>
+	<Physics>
+		<Meshes>
+			<Box dim_x="5" dim_y="5" dim_z="5"/>
+		</Meshes>
+		<Density>aluminum</Density>
+		<PhysicsMaterial>Normal</PhysicsMaterial>
+		<Position x="0" y="0" z="0"/>
+		<Orientation axis_x="0" axis_y="0" axis_z="0" degrees="0"/>
+	</Physics>
+	<Render>
+			<Box
+	</Render>
+</Actor>

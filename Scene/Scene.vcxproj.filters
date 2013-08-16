@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Source\Scene_pch.h" />
+    <ClInclude Include="Source\Representations\Representation.h">
+      <Filter>Representations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene.h" />
+    <ClInclude Include="Source\Representations\Root.h">
+      <Filter>Representations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Representations\DynamicRepresentation.h">
+      <Filter>Representations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Representations\StaticRepresentation.h">
+      <Filter>Representations</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Scene_pch.cpp" />
+    <ClCompile Include="Source\Scene.cpp" />
+    <ClCompile Include="Source\Representations\Representation.cpp">
+      <Filter>Representations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Representations\Root.cpp">
+      <Filter>Representations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Representations\DynamicRepresentation.cpp">
+      <Filter>Representations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Representations\StaticRepresentation.cpp">
+      <Filter>Representations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Representations">
+      <UniqueIdentifier>{0b088bb6-cbe7-44d7-811f-5e0a63a3a30d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

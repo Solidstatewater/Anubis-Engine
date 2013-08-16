@@ -1,0 +1,71 @@
+﻿Build started 6/17/2013 9:42:14 PM.
+     1>Project "D:\Users\Dgek\Desktop\Dgek\Engine\ZGraphics_Test\ZGraphics_Test.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Users\Dgek\Desktop\Dgek\Engine\Definitions\Source /ID:\Users\Dgek\Desktop\Dgek\Engine\Graphics\Source /I"D:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include" /ID:\Users\Dgek\Desktop\Dgek\Engine\DXUT /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt winmain.cpp
+         winmain.cpp
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(12): warning C4005: 'DXGI_STATUS_OCCLUDED' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49449) : see previous definition of 'DXGI_STATUS_OCCLUDED'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(13): warning C4005: 'DXGI_STATUS_CLIPPED' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49458) : see previous definition of 'DXGI_STATUS_CLIPPED'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(14): warning C4005: 'DXGI_STATUS_NO_REDIRECTION' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49467) : see previous definition of 'DXGI_STATUS_NO_REDIRECTION'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(15): warning C4005: 'DXGI_STATUS_NO_DESKTOP_ACCESS' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49476) : see previous definition of 'DXGI_STATUS_NO_DESKTOP_ACCESS'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(16): warning C4005: 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49485) : see previous definition of 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(17): warning C4005: 'DXGI_STATUS_MODE_CHANGED' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49494) : see previous definition of 'DXGI_STATUS_MODE_CHANGED'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(18): warning C4005: 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49503) : see previous definition of 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(21): warning C4005: 'DXGI_ERROR_INVALID_CALL' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49518) : see previous definition of 'DXGI_ERROR_INVALID_CALL'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(22): warning C4005: 'DXGI_ERROR_NOT_FOUND' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49527) : see previous definition of 'DXGI_ERROR_NOT_FOUND'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(23): warning C4005: 'DXGI_ERROR_MORE_DATA' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49536) : see previous definition of 'DXGI_ERROR_MORE_DATA'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(24): warning C4005: 'DXGI_ERROR_UNSUPPORTED' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49545) : see previous definition of 'DXGI_ERROR_UNSUPPORTED'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(25): warning C4005: 'DXGI_ERROR_DEVICE_REMOVED' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49554) : see previous definition of 'DXGI_ERROR_DEVICE_REMOVED'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(26): warning C4005: 'DXGI_ERROR_DEVICE_HUNG' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49563) : see previous definition of 'DXGI_ERROR_DEVICE_HUNG'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(27): warning C4005: 'DXGI_ERROR_DEVICE_RESET' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49573) : see previous definition of 'DXGI_ERROR_DEVICE_RESET'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(28): warning C4005: 'DXGI_ERROR_WAS_STILL_DRAWING' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49582) : see previous definition of 'DXGI_ERROR_WAS_STILL_DRAWING'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(29): warning C4005: 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49592) : see previous definition of 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(30): warning C4005: 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49601) : see previous definition of 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(31): warning C4005: 'DXGI_ERROR_DRIVER_INTERNAL_ERROR' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49611) : see previous definition of 'DXGI_ERROR_DRIVER_INTERNAL_ERROR'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(32): warning C4005: 'DXGI_ERROR_NONEXCLUSIVE' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49620) : see previous definition of 'DXGI_ERROR_NONEXCLUSIVE'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(33): warning C4005: 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49629) : see previous definition of 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(34): warning C4005: 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49639) : see previous definition of 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(35): warning C4005: 'DXGI_ERROR_REMOTE_OUTOFMEMORY' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49648) : see previous definition of 'DXGI_ERROR_REMOTE_OUTOFMEMORY'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d11.h(917): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49817) : see previous definition of 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d11.h(918): warning C4005: 'D3D11_ERROR_FILE_NOT_FOUND' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49826) : see previous definition of 'D3D11_ERROR_FILE_NOT_FOUND'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d11.h(919): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49836) : see previous definition of 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d11.h(920): warning C4005: 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49845) : see previous definition of 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d10.h(608): warning C4005: 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49793) : see previous definition of 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
+     1>d:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d10.h(609): warning C4005: 'D3D10_ERROR_FILE_NOT_FOUND' : macro redefinition
+                 d:\program files (x86)\windows kits\8.0\include\shared\winerror.h(49802) : see previous definition of 'D3D10_ERROR_FILE_NOT_FOUND'
+     1>d:\users\dgek\desktop\dgek\engine\math\source\vectors.h(53): warning C4091: 'typedef ' : ignored on left of 'Anubis::Vec' when no variable is declared
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Dgek\Desktop\Dgek\Engine\Debug\ZGraphics_Test.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\Users\Dgek\Desktop\Dgek\Engine\\Lib\Debug /LIBPATH:"D:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86" d3d11.lib d3dcompiler.lib dxgi.lib dxut11.lib DxErr.lib winmm.lib comctl32.lib d3dx11d.lib d3d9.lib d3dx9d.lib d3d10.lib d3dx10.lib d3dx10d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\Dgek\Desktop\Dgek\Engine\Debug\ZGraphics_Test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"GraphicsTest" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Dgek\Desktop\Dgek\Engine\Debug\ZGraphics_Test.lib" /MACHINE:X86 Debug\winmain.obj
+         D:\Users\Dgek\Desktop\Dgek\Engine\Lib\Debug\Graphics.lib
+         ZGraphics_Test.vcxproj -> D:\Users\Dgek\Desktop\Dgek\Engine\Debug\ZGraphics_Test.exe
+     1>Done Building Project "D:\Users\Dgek\Desktop\Dgek\Engine\ZGraphics_Test\ZGraphics_Test.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.50

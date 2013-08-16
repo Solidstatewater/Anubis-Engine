@@ -1,0 +1,9 @@
+{	"name" : "BoxEntity",
+	
+	"position_x" : 0.0,
+	"position_y" : 0.0,
+	"position_z" : 0.0,
+	
+	"size_x" : 5.0,
+	"size_y" : 5.0,
+	"size_z" : 5.0}
