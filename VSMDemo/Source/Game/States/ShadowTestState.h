@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GameStateMachine\State.h"
+#include "Entities\Entity.h"
 #include "Scene.h"
 
 namespace Anubis
@@ -8,6 +9,7 @@ namespace Anubis
 	class ShadowTestState : public State
 	{
 	protected:
+		EntityPtr m_pLight;
 
 	public:
 

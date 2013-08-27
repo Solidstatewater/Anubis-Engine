@@ -8,7 +8,7 @@
 //awesome platform for developing games!
 //
 //All sources can be found here:
-//	https://github.com/Dgek/Engine
+//	https://github.com/Dgek/Anubis-Engine
 //
 //Demos based on Anubis Engine can be found here:
 //	https://github.com/Dgek/Demos
@@ -75,7 +75,7 @@ namespace Anubis
 		///////////////////////////////////////
 		AVIRTUAL AVOID VAddBox(EntityPtr pEntity, Vec & pos, Vec & dimensions, AREAL r32Mass, ASTRING & physMat, ABOOL isStatic) = 0;
 		AVIRTUAL AVOID VAddPlane(EntityPtr pEntity, Vec & pos, Vec & halfDimensions, AREAL r32Mass, ASTRING & physMat, ABOOL isStatic) = 0;
-		//AVIRTUAL AVOID VAddSphere(EntityPtr pEntity, const AREAL radius, 
+		//TODO:Add more shapes!!!
 
 		/////////////////////////////////////
 		/*** Apply actions to the bodies ***/

@@ -7,7 +7,7 @@
 //awesome platform for developing games!
 //
 //All sources can be found here:
-//	https://github.com/Dgek/Engine
+//	https://github.com/Dgek/Anubis-Engine
 //
 //Demos based on Anubis Engine can be found here:
 //	https://github.com/Dgek/Demos
@@ -259,33 +259,6 @@ AINT32 Engine::Run()
 			/*********************************
 			Application received quit message!
 			*********************************/
-			/*if (msg.message == WM_SYSCOMMAND)
-			{
-				if (msg.wParam == SC_CLOSE)
-				{
-					Close();
-					break;
-				}
-			}
-
-			if (msg.message == WM_CLOSE)
-			{
-				Close();
-				break;
-			}
-
-			if (msg.message == WM_QUIT)
-			{
-				if (m_bQuitting)
-				{
-					Close();
-					break;
-				}
-				else
-				{
-					m_bQuitting = !m_bQuitting;
-				}
-			} */
 
 			//Generate system message
 			switch (msg.message)
@@ -363,8 +336,8 @@ AINT32 Engine::Run()
 
 AVOID Engine::Close()
 {
-	SAFE_DELETE(m_pGame);
-	CleanUpGraphics();
+	//SAFE_DELETE(m_pGame);
+	//CleanUpGraphics();
 	SAFE_DELETE(m_pMessenger);
 	DestroyWindow(m_hwnd);
 	SAFE_DELETE(m_pTimer);

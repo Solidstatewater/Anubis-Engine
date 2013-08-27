@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\winmain.cpp" />
+    <ClCompile Include="Source\ZMotionBlur_pch.cpp" />
+    <ClCompile Include="Source\Game\States\MotionBlurState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MotionBlurDemo.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MotionBlurStateFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ZMotionBlur_pch.h" />
+    <ClInclude Include="Source\Game\States\MotionBlurState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MotionBlurDemo.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MotionBlurStateFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{3ca76d3b-2bd7-4570-a264-5b5abbfb5628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities">
+      <UniqueIdentifier>{5ae3c761-fa36-44be-af8e-ef4823c18bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\States">
+      <UniqueIdentifier>{9af1c68b-32d8-4cb6-a12a-029b9d6c102a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{b7613da7-6576-45ec-8733-0fe90577b958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Meshes">
+      <UniqueIdentifier>{42adfc14-25ff-4833-8f29-fcc0c54e5d83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

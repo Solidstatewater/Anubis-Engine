@@ -7,7 +7,7 @@
 //awesome platform for developing games!
 //
 //All sources can be found here:
-//	https://github.com/Dgek/Engine
+//	https://github.com/Dgek/Anubis-Engine
 //
 //Demos based on Anubis Engine can be found here:
 //	https://github.com/Dgek/Demos
@@ -114,6 +114,11 @@ ABOOL Light::VInitialize(INPUT_LAYOUT * pLayout)
 	return true;
 }
 
+AVOID Light::SetWorldTransform(const Mat4x4 & transform)
+{
+	m_worldTransform = transform;
+}
+
 AVOID Light::VPreRender(Renderer *pRenderer)
 {
 	//set shadow map
@@ -141,7 +146,14 @@ AVOID Light::VPreRender(Renderer *pRenderer)
 	};
 	LightBuffer lightBuffer;
 	lightBuffer.color = m_pData->m_color;
-	lightBuffer.pos = m_pData->m_pos;
+	if (VGetType() == LT_Directional)
+	{
+		lightBuffer.pos = m_pData->m_pos;
+	}
+	else
+	{
+		lightBuffer.pos = m_pData->m_pos * m_worldTransform;
+	}
 	lightBuffer.dir = m_pData->m_dir;
 	lightBuffer.view = m_view;
 	lightBuffer.view.Transpose();
@@ -186,9 +198,10 @@ AVOID Light::VPrepareToGenerateShadowMap(const Mat4x4 & world, Renderer * pRende
 	//GetRenderTargetView()->Set(*m_pShadowMapDSV);
 
 	//set constant buffer with orthographic projection
+	Vec pos = m_pData->m_pos * m_worldTransform;
 	Vec dir = Vector(m_pData->m_dir.x, m_pData->m_dir.y, m_pData->m_dir.z, 0.0f);
-	Mat4x4 view = CreateViewMatrixLH(m_pData->m_pos, dir, Vector(0.0f, 1.0f, 0.0f, 0.0f));
-	Mat4x4 ortho = CreateOrthoProjectionLH(m_iShadowMapWidth, m_iShadowMapHeight, 0.5f, m_r32Range);
+	Mat4x4 view = CreateViewMatrixLH(pos, dir, Vector(0.0f, 1.0f, 0.0f, 0.0f));
+	Mat4x4 ortho = CreateOrthoProjectionLH(m_iShadowMapWidth * 1.5f, m_iShadowMapHeight * 1.5f, 0.5f, m_r32Range);
 	//Mat4x4 ortho = CreateOrthoProjectionLH(m_iShadowMapWidth, m_iShadowMapHeight, 2.0f, 60.0f);
 	//Mat4x4 ortho = CreatePerspectiveProjectionLH( 0.25f * 3.14f, (AREAL)SCREEN_WIDTH / (AREAL)SCREEN_HEIGHT, 0.5f, 30.0f);
 	
@@ -228,7 +241,7 @@ AVOID Light::VPrepareToGenerateShadowMap(const Mat4x4 & world, Renderer * pRende
 
 AVOID Light::ClearShadowMap()
 {
-	AREAL bgColor[4] = { 0.0f, 0.0f, 0.0f, 1.0f };
+	AREAL bgColor[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
 	ClearDepthStencilView(true, false, 1.0f, 0xFF, m_pShadowMapDSV);
 	ClearRenderTargetView(bgColor, m_pVarianceShadowRTV);
 } 

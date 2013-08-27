@@ -1,7 +1,7 @@
 {	"name" : "BoxEntity",
 	
 	"position_x" : 8.0,
-	"position_y" : -2.5,
+	"position_y" : -1.0,
 	"position_z" : 2.0,
 	
 	"size_x" : 3.0,

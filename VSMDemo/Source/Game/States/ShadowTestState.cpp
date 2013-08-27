@@ -54,12 +54,12 @@ AVOID ShadowTestState::VInitialize( Game * pGame, AUINTPTR uptrData)
 	//EntityPtr pLight = pGame->VAddEntity(light_params.VCreateEntity(pGame));
 	//light_params.VCreateRepresentation(m_pScene, pLight);
 	
-	SpotLightEntityResource spotLight_params = SpotLightEntityResource(Vector(1.0f, 1.0f, 1.0f, 1.0f), Vector(-5.0f, 4.0f, -10.0f, 1.0f), Vector(0.4f, -0.5f, 0.8f, 0.0f),
-		(AREAL)Pi / 8, (AREAL)Pi / 4, 30.0f);
+	SpotLightEntityResource spotLight_params = SpotLightEntityResource(Vector(1.0f, 1.0f, 1.0f, 1.0f), Vector(-10.0f, 4.0f, -15.0f, 1.0f), Vector(0.4f, -0.5f, 0.8f, 0.0f),
+		(AREAL)Pi / 8, (AREAL)Pi / 4, 200.0f);
 	//SpotLightEntityResource spotLight_params = SpotLightEntityResource(Vector(1.0f, 1.0f, 1.0f, 1.0f), Vector(0.0f, 16.0f, 0.0f, 1.0f), Vector(0.0f, -1.0f, 0.0f, 0.0f),
 	//	(AREAL)Pi / 8, (AREAL)Pi / 4, 30.0f);
-	EntityPtr pLight = pGame->VAddEntity(spotLight_params.VCreateEntity(pGame));
-	spotLight_params.VCreateRepresentation(m_pScene, pLight); 
+	m_pLight = pGame->VAddEntity(spotLight_params.VCreateEntity(pGame));
+	spotLight_params.VCreateRepresentation(m_pScene, m_pLight); 
 
 	//spotLight_params = SpotLightEntityResource(Vector(1.0f, 1.0f, 1.0f, 1.0f), Vector(-18.0f, 4.0f, 0.0f, 1.0f), Vector(0.6f, -0.3f, 0.0f, 0.0f), 
 	//	(AREAL)Pi / 16, (AREAL)Pi / 6, 50.0f);
@@ -78,6 +78,20 @@ AVOID ShadowTestState::VRelease( Game * pGame )
 AVOID ShadowTestState::VUpdate( Game * pGame, AREAL64 r64Time, AREAL64 r64ElapsedTime )
 {
 	m_pScene->VUpdate(r64Time, r64ElapsedTime);
+
+	//update light
+	AREAL diffX = r64ElapsedTime * 5.0f;
+	Vec trans = Vector(40.0f*Cos(r64Time), 8, 40.0f*Sin(r64Time), 1);
+	//Vec trans = Vector(-15, -2.0f, -8.0f, 1);
+	Mat4x4 tr;
+	tr.CreateTranslation(trans);
+
+	SpotLightEntity* pLight = static_cast<SpotLightEntity*>(&*m_pLight);
+	pLight->SetCurrentTransform(tr, r64Time);
+
+	Vec dir = Normalize(Vector(0.0f, 0.0f, 0.0f, 1.0f) - trans);
+	pLight->SetDirection(dir);
+	//pLight->SetDirection( Vector(0.4f, -0.5f, 0.8f, 2.0f) );
 }
 
 //Render State

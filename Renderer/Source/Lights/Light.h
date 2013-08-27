@@ -8,7 +8,7 @@
 //awesome platform for developing games!
 //
 //All sources can be found here:
-//	https://github.com/Dgek/Engine
+//	https://github.com/Dgek/Anubis-Engine
 //
 //Demos based on Anubis Engine can be found here:
 //	https://github.com/Dgek/Demos
@@ -73,6 +73,8 @@ namespace Anubis
 	{
 	protected:
 		ABOOL m_bInitialized;
+
+		Mat4x4 m_worldTransform;
 
 		/*** Light Shader ***/
 		AWSTRING m_vertexShaderFile;
@@ -232,6 +234,11 @@ namespace Anubis
 		{
 			return m_pTempSRV;
 		}
+
+		//tramsforms
+		AVOID SetDirection(const Vec & dir) { m_pData->m_dir = dir; }
+		AVOID SetWorldTransform(const Mat4x4 & transform);
+		AINLINE Mat4x4 GetWorldTransform() const { return m_worldTransform; }
 	};
 
 	typedef shared_ptr<Light>	LightPtr;

@@ -7,7 +7,7 @@
 //awesome platform for developing games!
 //
 //All sources can be found here:
-//	https://github.com/Dgek/Engine
+//	https://github.com/Dgek/Anubis-Engine
 //
 //Demos based on Anubis Engine can be found here:
 //	https://github.com/Dgek/Demos
@@ -171,6 +171,7 @@ AVOID EntityRepresentation::VSendRenderingData(Scene * pScene, Renderer * pRende
 	for (Lights::iterator it = m_lights.begin(); it != m_lights.end(); it++)
 	{
 		LightPtr pLight = (*it);
+		pLight->SetWorldTransform(pScene->GetTransform());
 		pRenderer->VPushLight(&*pLight);
 	}
 }

@@ -59,7 +59,7 @@ int WINAPI wWinMain(	HINSTANCE hInstance,
 	   ============================== */
 
 	//Allocate memory for engine subsystems!
-	//g_pAudio				= new DirectSoundAudio();
+	g_pAudio				= new DirectSoundAudio();
 	Renderer*	g_pRenderer = new DeferredRenderer();
 	IPhysics*	g_pPhysics = CreateHavokPhysics();
 	//IPhysics*	g_pPhysics = CreateNullPhysics();
@@ -72,8 +72,8 @@ int WINAPI wWinMain(	HINSTANCE hInstance,
 	g_pCache->Init();
 
 	//add resource loaders
-	IResourceLoader* pWAVELoader = new WaveResourceLoader();
-	g_pCache->RegisterLoader(shared_ptr<IResourceLoader>(pWAVELoader));
+	//IResourceLoader* pWAVELoader = new WaveResourceLoader();
+	//g_pCache->RegisterLoader(shared_ptr<IResourceLoader>(pWAVELoader));
 
 	IResourceLoader* pObjLoader = new ObjResourceLoader();
 	g_pCache->RegisterLoader(shared_ptr<IResourceLoader>(pObjLoader));
